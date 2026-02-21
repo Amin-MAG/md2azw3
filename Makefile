@@ -1,4 +1,4 @@
-IMAGE_NAME = aminmag/md2awz3
+IMAGE_NAME = aminmag/md2azw3
 PLATFORMS ?= linux/amd64,linux/arm64
 VERSION := $(shell cat VERSION)
 
@@ -50,7 +50,7 @@ dev:
 .PHONY: swag
 swag:
 	@which swag > /dev/null || go install github.com/swaggo/swag/cmd/swag@latest
-	swag init -g cmd/md2awz/main.go -o api --parseDependency --parseInternal
+	swag init -g cmd/md2azw3/main.go -o api --parseDependency --parseInternal
 
 .PHONY: test
 test:

@@ -5,8 +5,11 @@ import "strings"
 var AppVersion = "local"
 
 type Config struct {
-	MD2AWZ3 struct {
+	MD2AZW3 struct {
 		IsProductionMode bool `env:"IS_PRODUCTION_MODE" env-default:"false" env-description:"Is in production mode"`
+	}
+	HTTP struct {
+		Port int `env:"HTTP_PORT" env-default:"8081" env-description:"HTTP server port"`
 	}
 	Logger struct {
 		Level              string `env:"LOGGER_LEVEL" env-default:"debug" env-description:"Log Level for application log"`
