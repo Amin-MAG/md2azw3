@@ -1,6 +1,6 @@
 # md2azw3
 
-A lightweight HTTP service that converts Markdown files to AZW3 (Kindle) format. Uses [go-epub](https://github.com/go-shiori/go-epub) for EPUB generation and [KindleGen](https://wiki.mobileread.com/wiki/KindleGen) for EPUB-to-AZW3 conversion.
+A lightweight HTTP service that converts Markdown files to AZW3 (Kindle) format. Pure Go implementation using [gomarkdown](https://github.com/gomarkdown/markdown) for Markdown parsing and [leotaku/mobi](https://github.com/leotaku/mobi) for KF8/AZW3 generation. No external binaries required.
 
 ## Quick Start
 
