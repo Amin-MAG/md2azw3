@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-const LoggerPackageName = "bitbucket.org/thevport/vcloud_libraries/log"
+const LoggerPackageName = "github.com/Amin-MAG/md2azw3/pkg/log"
 const MaximumNumberOfStackFrames = 5
 
 func GetCurrentFunctionName(ctx context.Context) context.Context {
